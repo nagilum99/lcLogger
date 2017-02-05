@@ -46,6 +46,7 @@ lcLogger::Debug("Debug message",$oObjectToDebug);
 ### Logging to file
 Use `lcLogger::Init("File",$aOption);` to init the logger for file-logging.
 When using files for logging make sure that nobody can access the files from outside (deny *.log via htaccess eg.)
+
 Options (both are optional)  are:
 * File -> Default is `date("my")" ".log" extension is added within the function
 * Format -> Default is `"%date%\t%level%\t%ip%:%method%\t%uri%:%source%\t%message%\r\n"`
@@ -72,6 +73,7 @@ Options are:
 (Requiered)
 * User => Username for MySql
 * Password => Password for MySql
+
 (Optional)
 * Host => MySql Host, default is "localhost"
 * Database => Databasename in MySql, default is "Log"
@@ -96,6 +98,7 @@ lcLogger::Critical("Critical message");
 
 ### Logging to MonogDB
 Use `lcLogger::Init("MongoDB",$aOption);` to init the logger to save the log in a MongoDB database.
+
 Options are:
 * ConnectionString => string to connect to MongoDB, Default is "mongodb://localhost:27017"
     see https://secure.php.net/manual/de/mongodb-driver-manager.construct.php for more information
