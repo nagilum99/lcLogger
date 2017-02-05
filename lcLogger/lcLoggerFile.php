@@ -6,7 +6,7 @@
 class lcLoggerFile implements lcLoggerStoreInterface{
 
     /**
-     * path because fopen can use relative paths
+     * path because fopen can't use relative paths
      * @var string
      */
     private $sPath = "";
