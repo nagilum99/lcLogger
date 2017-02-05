@@ -55,7 +55,7 @@ class lcLoggerFile implements lcLoggerStoreInterface{
      */
     public function saveData($aData = []){
 
-        $fFile = fopen($this->sPath.$this->sFile,'a');
+        $fFile = @fopen($this->sPath.$this->sFile,'a');
 
         if($fFile == false){
             trigger_error("can not open logfile: ".$this->sFile,E_USER_ERROR);
