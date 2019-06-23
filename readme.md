@@ -5,7 +5,7 @@ lcLogger is a simple php class to log messages to a file or database (MySql or M
 * Mysqli if you want to use MySql
 * MongoClient (PHP5) or MongoDBManager(PHP7) if you use MongoDB 
 
-### Useage
+### Usage
 just include the file and init the logger
 ```PHP
 <?php
